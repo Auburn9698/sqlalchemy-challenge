@@ -138,7 +138,7 @@ def tempbydate(start, end):
     else:
         results = session.query(*sel).filter(Measurement.date.between(start, end)).all()
 
- # Create a dictionary from the row data and append to a list of dates and temps:    
+ # Create a dictionary from the rows and append to a list of temp data:    
     temp_list = []
     for TMIN, TAVG, TMAX in results:
         tobs_dict = {}
@@ -148,8 +148,6 @@ def tempbydate(start, end):
         temp_list.append(tobs_dict)
     session.close()
     return jsonify(temp_list)
-
-
 
 
 if __name__ == '__main__':
