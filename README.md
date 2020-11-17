@@ -42,9 +42,8 @@ Use Flask to create your routes.
 
 ## Routes
 
-/
-- Home page.
-
+- /
+  - Home page.
   - List all routes that are available.
 
 - /api/v1.0/precipitation
