@@ -40,9 +40,6 @@ def welcome():
         f"/api/v1.0/tobs<br/>"
         f"/api/v1.0/<;start>;<br>"
         f"/api/v1.0/<;start>;/<;end>;<br>"
-
-#        f"/api/v1.0/<start><br/>"
-#        f"/api/v1.0/<start>/<end><br/>"
     )
 
 # Convert the query results to a dictionary using date as the key and prcp as the value.
